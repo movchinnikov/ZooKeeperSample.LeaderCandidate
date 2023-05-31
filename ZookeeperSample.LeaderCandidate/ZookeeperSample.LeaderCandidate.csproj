@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+      <PackageReference Include="Microsoft.NET.Build.Containers" Version="7.0.302" />
+      <PackageReference Include="ZooKeeperNetEx" Version="3.4.12.4" />
+      <PackageReference Include="ZooKeeperNetEx.Recipes" Version="3.4.12.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ZooKeeperSample.Infrastructure\ZooKeeperSample.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>
